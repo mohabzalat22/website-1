@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class = "user-select-none">
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-start" id="offcanvas">
+        <div class="offcanvas-header">
+            <span class="offcanvas-title">Made by</span>
+            <button class="btn btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="profile d-flex bg-light border">
+            <img src="1.jpg" alt="" class="d-inline-block rounded-circle avatar">
+            <div class="user position-relative flex-grow-1">
+                <div class="position-absolute bottom-0">
+                    <p class="m-0">Mohab Ali</p>
+                    <p class="ms-1 my-0 text-muted">web designer</p>
+                </div>
+            </div>
+        </div>
+        <!-- end of profile offcanvas -->
+        <div class="m-2">
+            <ul class="list-group">
+                <li class="list-group-item text-white bg-danger">Using</li>
+                <li class="list-group-item">Html5</li>
+                <li class="list-group-item">Css3</li>
+                <li class="list-group-item">Js</li>
+                <li class="list-group-item">BootStrap5</li>
+            </ul>
+        </div>
+    </div>
+    <!-- container -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-danger" href="#">SIA</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#offcanvas" data-bs-toggle="offcanvas">Info</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-danger" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- end of navbar -->
+    <div class="container">
+        <div class="carousel slide carousel-fade" id="carousel"  data-bs-ride="carousel" >
+            <div class="carousel-indicators">
+                <button data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                <button data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                <button data-bs-target="#carousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner text-center"  >
+                <div class="carousel-item"><img src="1.jpg" height="500px" alt=""></div>
+                <div class="carousel-item active"><img src="2.jpg" height="500px" alt=""></div>
+                <div class="carousel-item"><img src="3.jpg" height="500px" alt=""></div>
+
+            </div>
+            <div class="carousel-control-prev" type = "button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-secondary"></span>
+            </div>
+            <div class="carousel-control-next" type = "button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-secondary"></span>
+            </div>
+        </div>
+        <!-- end carousel -->
+        <div class="row m-2">
+            <div class="col p-5 text-center">
+                <span class="h3">Explore Our New Products.</span>
+            </div>
+        </div>
+        <!-- end of about description -->
+        <div class="row m-2" id="about">
+            <div class="col-12 col-md-6"><img src="1.jpg" class="img-fluid" alt=""></div>
+            <div class="col-12 col-md-6 d-flex align-items-center position-relative">
+                <div class="description">
+                    <h1 class="h4 p-1">Products</h1>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <button class="btn btn-danger position-absolute bottom-0 end-0">
+                    GO
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle " viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                      </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- end about section -->
+        <div class="row  border p-2 m-md-3">
+            <div class="col">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><button class="nav-link text-danger active"  data-bs-toggle="tab" data-bs-target="#item1">item1</button></li>
+                    <li class="nav-item"><button class="nav-link text-danger"  data-bs-toggle="tab" data-bs-target="#item2">item2</button></li>
+                    <li class="nav-item"><button class="nav-link text-danger"  data-bs-toggle="tab" data-bs-target="#item3">item3</button></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane show active text-muted" role="tabpanel" id="item1">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </div>
+                    <div class="tab-pane text-muted" role="tabpanel" id="item2">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, optio.
+                    </div>
+                    <div class="tab-pane text-muted" role="tabpanel" id="item3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, numquam quaerat?
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- end of nav tabs -->
+        <div class="row">
+            <div class="col-12 col-md-4 my-1">
+                <div class="card">
+                    <img class="card-img-top" src="1.jpg" alt="">
+                    <div class="card-body">
+                        <span class="card-title h5">title</span>
+                        <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn btn-danger">More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 my-1">
+                <div class="card">
+                    <img class="card-img-top" src="2.jpg" alt="">
+                    <div class="card-body">
+                        <span class="card-title h5">title</span>
+                        <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn btn-danger">More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 my-1">
+                <div class="card">
+                    <img class="card-img-top" src="3.jpg" alt="">
+                    <div class="card-body">
+                        <span class="card-title h5">title</span>
+                        <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn btn-danger">More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- cards end -->
+        <div class="row m-2">
+            <div class="col p-5 text-center">
+                <span class="h3">Contact Us.</span>
+            </div>
+        </div>
+        <!-- end description 2 -->
+        <div class="row ecolor" id="contact">
+            <div class="col-12 col-lg-6 mx-auto p-3">
+                <form class="border p-2">
+                    <label class="form-label m-1">Email</label>
+                    <input type="text" class="form-control">
+                    <div class="form-text m-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+                    <label class="form-label">Password</label>
+                    <input type="text" class="form-control">
+                    <label class="form-label m-1">Message</label>
+                    <textarea name="" id=""   rows="3" class="my-1 form-control"></textarea>
+                    <button class="btn btn-dark mt-2" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+        <!-- end form -->
+    </div>
+    <!-- container end -->
+    <!-- js -->  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- <script src="bootstrap.bundle.min.js"></script> -->
+    <script src="script.js"></script>
+</body>
+</html>
